@@ -272,7 +272,7 @@ func (b *SimulationBuilder) Build() ISimulation {
 }
 
 func (s *Simulation) Run() {
-	fmt.Println("Starting simulation at %i",s.Time())
+	fmt.Println("Starting simulation at ",s.Time())
 	for _, progress := range s.progressProperties {
 		event := events.NewEvent(0, nil, progress)
 		s.underlaySimulation.Push(event)

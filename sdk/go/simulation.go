@@ -295,6 +295,7 @@ func (s *Simulation) Run() {
 }
 
 func (s *Simulation) Stop() {
+	fmt.Println("Finishing simulation at ",s.Time())
 	s.underlaySimulation.Stop()
 }
 

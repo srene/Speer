@@ -1,6 +1,6 @@
 {
     "lang" : "go",
-    "entry" : "github.com/danalex97/Speer/examples/sink/SinkExample",
+    "entry" : "github.com/srene/Speer/examples/sink/SinkExample",
 
     "nodes" : 10,
     "logFile" : "./log.json",

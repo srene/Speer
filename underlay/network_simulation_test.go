@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 	// "fmt"
-	. "github.com/danalex97/Speer/events"
+	. "github.com/srene/Speer/events"
 )
 
 func TestNetworkSimulationSmallNetwork(t *testing.T) {

@@ -1,6 +1,6 @@
 {
     "lang": "go",
-    "entry": "github.com/danalex97/Speer/examples/routines/RoutinesExample",
+    "entry": "github.com/srene/Speer/examples/routines/RoutinesExample",
 
     "nodes": 2,
     "transferInterval": 10,

@@ -1,10 +1,10 @@
 package config
 
 import (
-	"github.com/danalex97/Speer/config/stub"
+	"github.com/srene/Speer/config/stub"
 
-	"github.com/danalex97/Speer/interfaces"
-	"github.com/danalex97/Speer/sdk/go"
+	"github.com/srene/Speer/interfaces"
+	"github.com/srene/Speer/sdk/go"
 
 	"fmt"
 	"os"

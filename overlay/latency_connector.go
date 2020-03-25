@@ -1,9 +1,9 @@
 package overlay
 
 import (
-	. "github.com/danalex97/Speer/events"
-	"github.com/danalex97/Speer/interfaces"
-	"github.com/danalex97/Speer/underlay"
+	. "github.com/srene/Speer/events"
+	"github.com/srene/Speer/interfaces"
+	"github.com/srene/Speer/underlay"
 )
 
 // A LatencyConnector is an interface which allows sending and

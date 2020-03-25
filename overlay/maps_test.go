@@ -1,7 +1,7 @@
 package overlay
 
 import (
-	"github.com/danalex97/Speer/underlay"
+	"github.com/srene/Speer/underlay"
 	"math"
 	"math/rand"
 	"testing"

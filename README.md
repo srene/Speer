@@ -1,7 +1,7 @@
 <img src="docs/pics/logo.png" width="300">
 
-[![Build Status](https://travis-ci.org/danalex97/Speer.svg?branch=master)](https://travis-ci.org/danalex97/Speer) [![Coverage Status](https://coveralls.io/repos/github/danalex97/Speer/badge.svg?branch=master)](https://coveralls.io/github/danalex97/Speer?branch=master)
-[![GoDoc](https://godoc.org/github.com/danalex97/Speer?status.png)](https://godoc.org/github.com/danalex97/Speer)
+[![Build Status](https://travis-ci.org/srene/Speer.svg?branch=master)](https://travis-ci.org/srene/Speer) [![Coverage Status](https://coveralls.io/repos/github/srene/Speer/badge.svg?branch=master)](https://coveralls.io/github/srene/Speer?branch=master)
+[![GoDoc](https://godoc.org/github.com/srene/Speer?status.png)](https://godoc.org/github.com/srene/Speer)
 
 
 A discrete event **S**imulator for **peer**-to-peer network modeling. **Speer is made for students, researchers and hobbyists.** It's goal is to allow
@@ -13,7 +13,7 @@ It combines event-driven simulations with cycle-based concepts and allows parall
 
 After getting **Golang >= 1.6** and setting **$GOPATH**, install Speer via:
 ```
-curl https://raw.githubusercontent.com/danalex97/Speer/master/install.sh | bash
+curl https://raw.githubusercontent.com/srene/Speer/master/install.sh | bash
 ```
 
 Now, you can run a simulation from a JSON configuration as follows:
@@ -51,6 +51,6 @@ speer
 
 ## Projects using Speer
 
-- [CacheTorrent](https://github.com/danalex97/nfsTorrent) - is a file sharing system based on leader election, caches and indirect requests
+- [CacheTorrent](https://github.com/srene/nfsTorrent) - is a file sharing system based on leader election, caches and indirect requests
 
-<img src="https://raw.githubusercontent.com/danalex97/nfsTorrent/master/docs/pics/cache.png" width="500">
+<img src="https://raw.githubusercontent.com/srene/nfsTorrent/master/docs/pics/cache.png" width="500">

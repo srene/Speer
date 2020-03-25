@@ -1,7 +1,7 @@
 package underlay
 
 import (
-	. "github.com/danalex97/Speer/events"
+	. "github.com/srene/Speer/events"
 	"testing"
 )
 

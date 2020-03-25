@@ -9,7 +9,7 @@ import (
 	"path"
 )
 
-var speer = os.Getenv("GOPATH") + "/src/github.com/danalex97/Speer/"
+var speer = os.Getenv("GOPATH") + "/src/github.com/srene/Speer/"
 
 var (
 	stubFile   = speer + "config/stub/stub.go.tmp"

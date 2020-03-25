@@ -24,7 +24,7 @@ type Node interface {
 A user needs to implement all the methods provided below to obtain a valid node to use in a simulation:
 ```go
 import (
-  . "github.com/danalex97/Speer/interfaces"
+  . "github.com/srene/Speer/interfaces"
 )
 
 type Example struct {

@@ -1,10 +1,10 @@
 package logs
 
 import (
-	. "github.com/danalex97/Speer/events"
+	. "github.com/srene/Speer/events"
 
-	"github.com/danalex97/Speer/overlay"
-	"github.com/danalex97/Speer/underlay"
+	"github.com/srene/Speer/overlay"
+	"github.com/srene/Speer/underlay"
 
 	"encoding/json"
 	"fmt"

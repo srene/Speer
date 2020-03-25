@@ -1,14 +1,14 @@
 package sdk
 
 import (
-	"github.com/danalex97/Speer/interfaces"
+	"github.com/srene/Speer/interfaces"
 
-	"github.com/danalex97/Speer/capacity"
-	"github.com/danalex97/Speer/events"
-	"github.com/danalex97/Speer/overlay"
-	"github.com/danalex97/Speer/underlay"
+	"github.com/srene/Speer/capacity"
+	"github.com/srene/Speer/events"
+	"github.com/srene/Speer/overlay"
+	"github.com/srene/Speer/underlay"
 
-	"github.com/danalex97/Speer/logs"
+	"github.com/srene/Speer/logs"
 
 	"fmt"
 )
@@ -272,6 +272,7 @@ func (b *SimulationBuilder) Build() ISimulation {
 }
 
 func (s *Simulation) Run() {
+	fmt.Println("Starting simulation at %i",s.Time())
 	for _, progress := range s.progressProperties {
 		event := events.NewEvent(0, nil, progress)
 		s.underlaySimulation.Push(event)

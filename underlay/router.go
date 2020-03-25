@@ -2,7 +2,7 @@ package underlay
 
 import (
 	"fmt"
-	. "github.com/danalex97/Speer/events"
+	. "github.com/srene/Speer/events"
 )
 
 const RouterCacheSize int = 50

@@ -1,7 +1,7 @@
 package capacity
 
 import (
-	"github.com/danalex97/Speer/interfaces"
+	"github.com/srene/Speer/interfaces"
 )
 
 // Allow connecting between two nodes via scheduler

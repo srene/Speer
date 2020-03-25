@@ -1,7 +1,7 @@
 package overlay
 
 import (
-	"github.com/danalex97/Speer/interfaces"
+	"github.com/srene/Speer/interfaces"
 )
 
 const controlMessageCapacity int = 1000000

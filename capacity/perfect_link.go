@@ -2,7 +2,7 @@ package capacity
 
 import (
 	"container/list"
-	. "github.com/danalex97/Speer/interfaces"
+	. "github.com/srene/Speer/interfaces"
 	"sync"
 )
 

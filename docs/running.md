@@ -15,8 +15,8 @@ The configuration has to provide the path to your source code that implements th
 package examples
 
 import (
-  . "github.com/danalex97/Speer/interfaces"
-  "github.com/danalex97/Speer/config"
+  . "github.com/srene/Speer/interfaces"
+  "github.com/srene/Speer/config"
 )
 
 [...]
@@ -42,7 +42,7 @@ For an example of a JSON configuration check `examples/config/no_entry.json`.
 To SDK packet can be used to build and run a simulation. The SDK packet offers a builder interface which allows building custom simulations. An example is:
 ```go
 import (
-  . "github.com/danalex97/Speer/sdk/go"
+  . "github.com/srene/Speer/sdk/go"
 )
 
 // [...]
@@ -71,4 +71,4 @@ func main() {
 }
 ```
 
-To see a full list of the options you can consult the following [link](https://godoc.org/github.com/danalex97/Speer/sdk/go#SimulationBuilder).
+To see a full list of the options you can consult the following [link](https://godoc.org/github.com/srene/Speer/sdk/go#SimulationBuilder).

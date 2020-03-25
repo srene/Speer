@@ -1,9 +1,9 @@
 package capacity
 
 import (
-	. "github.com/danalex97/Speer/events"
-	. "github.com/danalex97/Speer/interfaces"
-	. "github.com/danalex97/Speer/structs"
+	. "github.com/srene/Speer/events"
+	. "github.com/srene/Speer/interfaces"
+	. "github.com/srene/Speer/structs"
 	"math"
 	"sync"
 )

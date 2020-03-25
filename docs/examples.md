@@ -4,7 +4,7 @@
 
 Before running the examples, move to the installation directory of Speer:
 ```
-cd $GOPATH/src/github.com/danalex97/Speer
+cd $GOPATH/src/github.com/srene/Speer
 ```
 
 We provide the following examples:
@@ -14,7 +14,7 @@ go run speer.go -config=examples/config/broadcast.json
 go run speer.go -config=examples/config/data_link.json
 ```
 
-For a more complex example, check this [repository](https://github.com/danalex97/nfsTorrent).
+For a more complex example, check this [repository](https://github.com/srene/nfsTorrent).
 
 ### Primitives
 

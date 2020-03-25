@@ -1,7 +1,7 @@
 package sdk
 
 import (
-	"github.com/danalex97/Speer/interfaces"
+	"github.com/srene/Speer/interfaces"
 )
 
 type SpeerNode interface {

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/danalex97/Speer/config"
+	"github.com/srene/Speer/config"
 
 	"flag"
 	errLog "log"
@@ -15,7 +15,7 @@ import (
 	"time"
 )
 
-var speer = os.Getenv("GOPATH") + "/src/github.com/danalex97/Speer/"
+var speer = os.Getenv("GOPATH") + "/src/github.com/srene/Speer/"
 
 var cpuprofile = flag.String("cpuprofile", "", "Write cpu profile to `file`.")
 var memprofile = flag.String("memprofile", "", "Write memory profile to `file`.")
@@ -80,6 +80,7 @@ func main() {
 	defer makeMemprofile()
 	setSignals()
 
+	fmt.Println("Config "+*configPath)
 	jsonConfig := config.JSONConfig(*configPath)
 	simulation := config.NewSimulation(jsonConfig)
 	simulation.Run()

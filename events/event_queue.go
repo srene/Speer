@@ -1,7 +1,7 @@
 package events
 
 import (
-	. "github.com/danalex97/Speer/structs"
+	. "github.com/srene/Speer/structs"
 	"sync"
 )
 

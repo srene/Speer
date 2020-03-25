@@ -1,8 +1,8 @@
 package examples
 
 import (
-	.   "github.com/danalex97/Speer/interfaces"
-	str "github.com/danalex97/Speer/structs"
+	.   "github.com/srene/Speer/interfaces"
+	str "github.com/srene/Speer/structs"
 
 	"fmt"
 )

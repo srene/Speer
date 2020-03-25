@@ -1,9 +1,9 @@
 package sdk
 
 import (
-	"github.com/danalex97/Speer/events"
-	"github.com/danalex97/Speer/interfaces"
-	"github.com/danalex97/Speer/overlay"
+	"github.com/srene/Speer/events"
+	"github.com/srene/Speer/interfaces"
+	"github.com/srene/Speer/overlay"
 )
 
 type NodeUtil interface {

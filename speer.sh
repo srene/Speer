@@ -5,4 +5,4 @@ then
 	  exit 1
 fi
 
-go run $GOPATH/src/github.com/danalex97/Speer/speer.go $@
+go run $GOPATH/src/github.com/srene/Speer/speer.go $@

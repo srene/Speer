@@ -1,6 +1,6 @@
 {
     "lang" : "go",
-    "entry" : "github.com/danalex97/Speer/examples/data_link/DataLinkExample",
+    "entry" : "github.com/srene/Speer/examples/data_link/DataLinkExample",
 
     "nodes" : 2,
 

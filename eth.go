@@ -14,7 +14,7 @@ func main() {
 
 	// Profiling
 	defer makeCPUProfile()()
-	defer makeMemprofile()
+	defer ma	keMemprofile()
 	setSignals()
 
 	fmt.Println("Config "+*configPath)
@@ -25,14 +25,14 @@ func main() {
 	time.Sleep(time.Second * time.Duration(*secs))
 	simulation.Stop()*/
 	sim := discv5.NewSimulation()
-	bootnode := sim.LaunchNode(false)
+	bootnode := sim.LaunchNode(true)
 
+	fmt.Printf("Boot node %x \n",bootnode.Self().ID[:8])
 	launcher := time.NewTicker(10 * time.Second)
 	go func() {
-		fmt.Println("testing2")
 		for range launcher.C {
-			fmt.Println("testing3")
 			net := sim.LaunchNode(true)
+			fmt.Printf("Launching new Node %x \n",net.Self().ID[:8])
 			go discv5.RandomResolves(sim, net)
 			if err := net.SetFallbackNodes([]*discv5.Node{bootnode.Self()}); err != nil {
 				panic(err)
@@ -41,7 +41,7 @@ func main() {
 		}
 	}()
 
-	time.Sleep(300 * time.Second)
+	time.Sleep(600 * time.Second)
 	launcher.Stop()
 	sim.Shutdown()
 	sim.PrintStats()

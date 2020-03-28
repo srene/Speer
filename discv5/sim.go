@@ -119,9 +119,9 @@ func RandomResolves(s *simulation, net *Network) {
 		select {
 		case <-timer.C:
 			target := s.randomNode().Self().ID
-			fmt.Printf("Node %x resolving target %x \n",net.Self().ID[:16],target[:1])
+			fmt.Printf("Node %x resolving target %x \n",net.Self().ID[:16],target[:16])
 			if !lookup(target) {
-				fmt.Printf("node %x: target %x not found", net.Self().ID[:8], target[:8])
+				fmt.Printf("node %x: target %x not found", net.Self().ID[:16], target[:16])
 			}
 			timer.Reset(randtime())
 		case <-net.closed:

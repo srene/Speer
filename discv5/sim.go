@@ -105,7 +105,7 @@ func (s *simulation) LaunchNode(log bool) *Network {
 	return net
 }
 
-func randomResolves(s *simulation, net *Network) {
+func RandomResolves(s *simulation, net *Network) {
 	randtime := func() time.Duration {
 		return time.Duration(rand.Intn(50)+20) * time.Second
 	}

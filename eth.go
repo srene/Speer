@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	. "github.com/srene/Speer/discv5"
+	"github.com/srene/Speer/discv5"
 	"time"
 )
 
@@ -24,7 +24,7 @@ func main() {
 
 	time.Sleep(time.Second * time.Duration(*secs))
 	simulation.Stop()*/
-	sim := NewSimulation()
+	sim := discv5.NewSimulation()
 	bootnode := sim.LaunchNode(false)
 
 	launcher := time.NewTicker(10 * time.Second)
@@ -33,8 +33,8 @@ func main() {
 		for range launcher.C {
 			fmt.Println("testing3")
 			net := sim.LaunchNode(true)
-			go randomResolves(sim, net)
-			if err := net.SetFallbackNodes([]*Node{bootnode.Self()}); err != nil {
+			go discv5.RandomResolves(sim, net)
+			if err := net.SetFallbackNodes([]*discv5.Node{bootnode.Self()}); err != nil {
 				panic(err)
 			}
 			fmt.Printf("launched @ %v: %x\n", time.Now(), net.Self().ID[:16])

@@ -130,6 +130,18 @@ func RandomResolves(s *simulation, net *Network) {
 	}
 }
 
+func RandomSingleResolve(s *simulation, net *Network) {
+	lookup := func(target NodeID) bool {
+		result := net.Resolve(target)
+		return result != nil && result.ID == target
+	}
+	target := s.randomNode().Self().ID
+	fmt.Printf("Node %x resolving target %x \n",net.Self().ID[:16],target[:16])
+	if !lookup(target) {
+		fmt.Printf("node %x: target %x not found \n", net.Self().ID[:16], target[:16])
+	}
+
+}
 type simTransport struct {
 	joinTime   time.Time
 	sender     NodeID

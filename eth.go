@@ -1,8 +1,9 @@
 package main
 
 import (
+	"fmt"
+	. "github.com/srene/Speer/discv5"
 	"time"
-	"github.com/srene/Speer/discv5"
 
 func main() {
 	/*rand.Seed(time.Now().UTC().UnixNano())

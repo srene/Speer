@@ -23,7 +23,7 @@ func NewSimulation() *simulation {
 	return &simulation{nodes: make(map[NodeID]*Network)}
 }
 
-func (s *simulation) shutdown() {
+func (s *simulation) Shutdown() {
 	s.mu.RLock()
 	alive := make([]*Network, 0, len(s.nodes))
 	for _, n := range s.nodes {

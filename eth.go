@@ -33,7 +33,7 @@ func main() {
 		for range launcher.C {
 			net := sim.LaunchNode(true)
 			fmt.Printf("Launching new Node %x \n",net.Self().ID[:16])
-			go discv5.RandomSingleResolve(sim, net)
+			go discv5.RandomResolves(sim, net)
 			if err := net.SetFallbackNodes([]*discv5.Node{bootnode.Self()}); err != nil {
 				panic(err)
 			}

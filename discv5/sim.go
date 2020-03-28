@@ -141,6 +141,8 @@ func RandomSingleResolve(s *simulation, net *Network) {
 	fmt.Printf("Node %x resolving target %x \n",net.Self().ID[:16],target[:16])
 	if !lookup(target) {
 		fmt.Printf("node %x: target %x not found \n", net.Self().ID[:16], target[:16])
+	}else {
+		fmt.Printf("Node %x target found %x at %v \n",net.Self().ID[:16],target[:16],time.Now())
 	}
 
 }

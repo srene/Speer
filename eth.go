@@ -28,7 +28,7 @@ func main() {
 	bootnode := sim.LaunchNode(true)
 
 	fmt.Printf("Boot node %x \n",bootnode.Self().ID[:16])
-	launcher := time.NewTicker(5 * time.Second)
+	launcher := time.NewTicker(10 * time.Second)
 	go func() {
 		for range launcher.C {
 			net := sim.LaunchNode(true)
@@ -41,7 +41,7 @@ func main() {
 		}
 	}()
 
-	time.Sleep(50 * time.Second)
+	time.Sleep(300 * time.Second)
 	launcher.Stop()
 	sim.Shutdown()
 	sim.PrintStats()

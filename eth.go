@@ -27,12 +27,12 @@ func main() {
 	sim := discv5.NewSimulation()
 	bootnode := sim.LaunchNode(true)
 
-	fmt.Printf("Boot node %x \n",bootnode.Self().ID[:8])
-	launcher := time.NewTicker(1 * time.Second)
+	fmt.Printf("Boot node %x \n",bootnode.Self().ID[:16])
+	launcher := time.NewTicker(5 * time.Second)
 	go func() {
 		for range launcher.C {
 			net := sim.LaunchNode(true)
-			fmt.Printf("Launching new Node %x \n",net.Self().ID[:8])
+			fmt.Printf("Launching new Node %x \n",net.Self().ID[:16])
 			go discv5.RandomResolves(sim, net)
 			if err := net.SetFallbackNodes([]*discv5.Node{bootnode.Self()}); err != nil {
 				panic(err)
@@ -41,7 +41,7 @@ func main() {
 		}
 	}()
 
-	time.Sleep(600 * time.Second)
+	time.Sleep(50 * time.Second)
 	launcher.Stop()
 	sim.Shutdown()
 	sim.PrintStats()

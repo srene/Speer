@@ -107,7 +107,7 @@ func (s *simulation) LaunchNode(log bool) *Network {
 
 func RandomResolves(s *simulation, net *Network) {
 	randtime := func() time.Duration {
-		return time.Duration(rand.Intn(50)+20) * time.Second
+		return time.Duration(rand.Intn(5)+2) * time.Second
 	}
 	lookup := func(target NodeID) bool {
 		result := net.Resolve(target)
@@ -121,7 +121,7 @@ func RandomResolves(s *simulation, net *Network) {
 			target := s.randomNode().Self().ID
 			fmt.Printf("Node %x resolving target %x \n",net.Self().ID[:16],target[:16])
 			if !lookup(target) {
-				fmt.Printf("node %x: target %x not found", net.Self().ID[:16], target[:16])
+				fmt.Printf("node %x: target %x not found \n", net.Self().ID[:16], target[:16])
 			}
 			timer.Reset(randtime())
 		case <-net.closed:

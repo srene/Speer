@@ -44,7 +44,7 @@ func (s *SinkExample) OnNotify() {
 		} else {
 			// the root will print the messages
 			s.ctr += 1
-			fmt.Println("message #", s.ctr, "received", m)
+			fmt.Println("message #", s.ctr, "received", m)s.
 		}
 	default:
 	}

@@ -2,7 +2,9 @@ package main
 
 import (
 	"fmt"
+	"github.com/ethereum/go-ethereum/log"
 	"github.com/srene/Speer/discv5"
+	"os"
 	"time"
 )
 
@@ -26,6 +28,8 @@ func main() {
 	simulation.Stop()*/
 	sim := discv5.NewSimulation()
 	bootnode := sim.LaunchNode(true)
+
+	log.Root().SetHandler(log.LvlFilterHandler(log.LvlTrace, log.StreamHandler(os.Stderr, log.TerminalFormat(false))))
 
 	fmt.Printf("Boot node %x \n",bootnode.Self().ID[:16])
 	launcher := time.NewTicker(10 * time.Second)

@@ -189,6 +189,7 @@ func (b *SimulationBuilder) WithCapacityNodes(
 		b.capacityMap.AddConnector(id, capacityConnector)
 
 		// register autowired node
+		fmt.Println("new node "+id)
 		newNode := NewAutowiredNode(b.template, NewSimulatedNode(
 			controlConnector,
 			capacityConnector,

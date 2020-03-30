@@ -2,7 +2,7 @@
     "lang" : "go",
     "entry" : "github.com/srene/Speer/examples/data_link/DataLinkExample",
 
-    "nodes" : 2,
+    "nodes" : 24,
 
     "logFile" : "./log.json",
 

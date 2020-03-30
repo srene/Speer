@@ -2,7 +2,7 @@
     "lang" : "go",
     "entry" : "github.com/srene/Speer/examples/sink/SinkExample",
 
-    "nodes" : 500,
+    "nodes" : 100,
     "logFile" : "./log.json",
     
     "network" : {

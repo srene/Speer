@@ -171,7 +171,7 @@ func (b *SimulationBuilder) WithCapacityNodes(
 	if b.capacityMap == nil {
 		panic("No capacity scheduler provided.")
 	}
-	fmt.Println("Number of nodes %v %v %v \n",nodes,b.nodes,b.cnode)
+	fmt.Printf("Number of nodes %v %v %v \n",nodes,b.nodes,b.cnode)
 	limit := b.cnode + nodes
 	if b.nodes < limit {
 		limit = b.nodes

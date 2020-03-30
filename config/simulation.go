@@ -43,6 +43,7 @@ func NewSimulationFromTemplate(
 	builder = builder.
 		WithFixedNodes(int(config.Nodes))
 
+	fmt.Printf("Capacity nodes %v \n",config.CapacityNodes)
 	if config.CapacityNodes != nil && config.TransferInterval == 0 {
 		panic("No transfer interval provided or transfer interval zero.")
 	} else if config.CapacityNodes != nil {

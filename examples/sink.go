@@ -15,6 +15,7 @@ type SinkExample struct {
 }
 
 func (s *SinkExample) New(util NodeUtil) Node {
+	fmt.println("New node"+util.Id())
 	return &SinkExample{
 		Transport: util.Transport(),
 
